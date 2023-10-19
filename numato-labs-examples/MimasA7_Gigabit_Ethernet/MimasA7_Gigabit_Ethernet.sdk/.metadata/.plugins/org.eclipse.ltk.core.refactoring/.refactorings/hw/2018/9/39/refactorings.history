@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;hw/download.bit&apos; to &apos;MimasA7_Gigabit_Ethernet.bit&apos;" description="Rename resource &apos;download.bit&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="download.bit" name="MimasA7_Gigabit_Ethernet.bit" stamp="1538032644327" updateReferences="true"/>
-</session>
