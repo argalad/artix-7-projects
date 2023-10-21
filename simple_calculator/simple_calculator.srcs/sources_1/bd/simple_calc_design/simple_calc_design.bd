@@ -1,0 +1,89 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a50tfgg484-1",
+      "gen_directory": "../../../../simple_calculator.gen/sources_1/bd/simple_calc_design",
+      "name": "simple_calc_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1.1"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "c_addsub_0": "",
+      "lmb_bram_if_cntlr_0": "",
+      "mult_gen_0": "",
+      "axi_iic_0": "",
+      "axi_gpio_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "simple_calc_design_clk_wiz_0_0",
+        "xci_path": "ip\\simple_calc_design_clk_wiz_0_0\\simple_calc_design_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "simple_calc_design_c_addsub_0_0",
+        "xci_path": "ip\\simple_calc_design_c_addsub_0_0\\simple_calc_design_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0"
+      },
+      "lmb_bram_if_cntlr_0": {
+        "vlnv": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
+        "xci_name": "simple_calc_design_lmb_bram_if_cntlr_0_0",
+        "xci_path": "ip\\simple_calc_design_lmb_bram_if_cntlr_0_0\\simple_calc_design_lmb_bram_if_cntlr_0_0.xci",
+        "inst_hier_path": "lmb_bram_if_cntlr_0"
+      },
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "simple_calc_design_mult_gen_0_0",
+        "xci_path": "ip\\simple_calc_design_mult_gen_0_0\\simple_calc_design_mult_gen_0_0.xci",
+        "inst_hier_path": "mult_gen_0"
+      },
+      "axi_iic_0": {
+        "vlnv": "xilinx.com:ip:axi_iic:2.1",
+        "xci_name": "simple_calc_design_axi_iic_0_0",
+        "xci_path": "ip\\simple_calc_design_axi_iic_0_0\\simple_calc_design_axi_iic_0_0.xci",
+        "inst_hier_path": "axi_iic_0"
+      },
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "simple_calc_design_axi_gpio_0_0",
+        "xci_path": "ip\\simple_calc_design_axi_gpio_0_0\\simple_calc_design_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0"
+      }
+    },
+    "nets": {
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      }
+    }
+  }
+}
